@@ -14,12 +14,12 @@ from linebot.models import (
 
 app = Flask(__name__)
 
-line_bot_api = LineBotApi('88be8c8f-28bc-4687-ba5a-c77e3d7c5e50')
-handler = WebhookHandler('1ca213f2f3474dcd8c299bbed0f3f866')
+line_bot_api = LineBotApi('lP2nHXZoYCZCJO5HZjjkxbbDeTenaAECcNKw1TPCm4hzUOg5EcONHym8oIc3QtQeWqkAkE4sJG0wtHrHHEov649JMrkroxyXvitbU1KSNvXCbmZib+YU0ThzdqsUsv3l/chInb4je7YcfwAJ7Sk3QgdB04t89/1O/w1cDnyilFU=')
+handler = WebhookHandler('9f73d9affc4e1b17eac7fc375553b6d2')
 
 
 @app.route("/callback", methods=['POST'])
-def callback():
+def callback(): 
     # get X-Line-Signature header value
     signature = request.headers['X-Line-Signature']
 
